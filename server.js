@@ -36,7 +36,7 @@ app.post('/add-user', async (req, res) => {
 });
 
 app.listen(5000, () => console.log('Backend running on port 5000'));
-pp.post('/webhook', async (req, res) => {
+app.post('/webhook', async (req, res) => {
   try {
     const { email, name, plan_type } = req.body; // Data from Lemon Squeezy webhook
 
